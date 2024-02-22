@@ -1,0 +1,8 @@
+table   {
+    font-family: Times New Roman;
+    size: 14;
+}
+
+th td   {
+    border: 2px solid  black;
+}

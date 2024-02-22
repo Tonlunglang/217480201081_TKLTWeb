@@ -1,0 +1,24 @@
+h1  {
+    color: blue;
+    text-align: center;
+}
+
+p   {
+    size: 14;
+    color: black;
+}
+
+
+
+div {
+    background-color: pink;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    float: none;
+    margin: 0px auto;
+    outline: 0px;
+    padding: 15px 20px;
+    vertical-align: baseline;
+
+}
