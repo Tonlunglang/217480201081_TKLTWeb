@@ -45,4 +45,16 @@
     display: block;
    }
 
-   
+   #menu ul li > .sub2-menu {
+    display: none;
+    position: absolute;
+  }
+
+  .sub2-menu    {
+    display: none;
+    position: absolute;
+  }
+
+  #menu ul li:hover .sub2-menu {
+    display: block;
+  }
