@@ -1,0 +1,24 @@
+h1  {
+    text-align: center;
+    color: red;
+}
+
+body    {
+    background-color: yellow;
+}
+
+#noidung    {
+    font-family: Verdana;
+    color: green;
+}
+
+ol p    {
+    font-family: Verdana;
+    color: purple;
+    font-weight: bold;
+}
+
+.lietke {
+    font-family: Times New Roman;
+    color: blue;
+}

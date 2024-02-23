@@ -1,0 +1,17 @@
+#cacmuc {
+    background-color: pink;
+    margin-right: 0px;
+}
+
+
+#gioithieu  {
+    background-color: aqua;
+    margin-left: 0px;
+}
+
+table   {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 85%;
+    text-align: left;
+}

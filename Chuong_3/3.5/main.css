@@ -1,0 +1,38 @@
+.year {
+    font-weight: bold;
+}
+
+#mau1  {
+    font-family: Verdana;
+    color: black;
+    size: 13pt;
+}
+
+#mau2  {
+    font-family: Tahoma;
+    color: black;
+    size: 13pt;
+    
+}
+
+#mau3  {
+    font-family: Times New Roman;
+    color: black;
+    size: 13pt;
+}
+
+#mau4  {
+    font-family: Verdana;
+    color: red;
+    size: 13pt;
+    list-style-type: disc;
+}
+
+#Thitotnghiep   {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+span   {
+    font-style: italic;
+}

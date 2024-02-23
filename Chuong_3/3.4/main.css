@@ -1,8 +1,12 @@
-table   {
+table, th, td  {
     font-family: Times New Roman;
     size: 14;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
-th td   {
-    border: 2px solid  black;
+
+
+.y  {
+    background-color: lightblue;
 }
