@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 14A</title>
+</head>
+<body>
+    <h2>Tính toán số học</h2>
+    <input type="text" name="Sohang1"><br><br>  <input type="text" name="Sohang2"><br><br>
+    <input type="text" name="Ketqua"><br><br>
+    <input type="button" value="Cộng" onclick="document.getElementsByName('Ketqua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) + parseFloat(document.getElementsByName('Sohang2')[0].value)">
+    <input type="button" value="Trừ" onclick="document.getElementsByName('Ketqua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) - parseFloat(document.getElementsByName('Sohang2')[0].value)">
+    <input type="button" value="Nhân" onclick="document.getElementsByName('Ketqua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) * parseFloat(document.getElementsByName('Sohang2')[0].value)">
+    <input type="button" value="Chia" onclick="document.getElementsByName('Ketqua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) / parseFloat(document.getElementsByName('Sohang2')[0].value)">
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap2B</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        document.write("<h1> Click vào nút Hello </h1><br>");
+        document.write("<br>");
+        function Hello(){
+            var Helo = document.getElementById("txtthongbao");
+            Helo.value = "Hello JavaScript";
+        }
+    </script>
+    <form>
+        <input type="button" name="callhello" value="Hello" onclick="Hello()">
+        <input type="text" id="txtthongbao">
+    </form>
+</body>
+</html>

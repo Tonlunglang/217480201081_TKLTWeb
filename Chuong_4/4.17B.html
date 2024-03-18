@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 17B</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        function doimau() {
+            var radios = document.getElementsByName('Mau');
+            var selectedColor;
+
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    selectedColor = radios[i].value;
+                    break;
+                }
+            }
+
+            document.body.style.backgroundColor = selectedColor;
+        }
+    </script>
+    <h2>Bạn hãy chọn màu nền</h2>
+    <input type="radio" name="Mau" value="yellow" onchange="doimau();"> Màu vàng
+    <input type="radio" name="Mau" value="green" onchange="doimau();"> Màu xanh lá
+    <input type="radio" name="Mau" value="brown" onchange="doimau();"> Màu nâu
+    <input type="radio" name="Mau" value="magenta" onchange="doimau();"> Màu hường
+</body>
+</html>

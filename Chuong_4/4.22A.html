@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 22A</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        function nhap(value) {
+            document.getElementById("ketqua").value += value;
+        }
+
+        function tinh() {
+            try {
+                var expression = document.getElementById("ketqua").value;
+                var inketqua = new Function('return ' + expression)();
+                document.getElementById("ketqua").value = inketqua;
+            } catch (error) {
+                document.getElementById("ketqua").value = "Error!";
+            }
+        }
+
+        function Xoa() {
+            document.getElementById("ketqua").value = "";
+        }
+    </script>
+    <input type="text" id="ketqua" style="width: 195px;"><br><br>
+    <input type="button" name="0" value="0" style="width: 36px;" onclick="nhap('0')"> 
+    <input type="button" name="1" value="1" style="width: 36px;" onclick="nhap('1')"> 
+    <input type="button" name="2" value="2" style="width: 36px;" onclick="nhap('2')"> 
+    <input type="button" name="3" value="3" style="width: 36px;" onclick="nhap('3')"> 
+    <input type="button" name="4" value="4" style="width: 36px;" onclick="nhap('4')"><br>
+    <input type="button" name="5" value="5" style="width: 36px;" onclick="nhap('5')"> 
+    <input type="button" name="6" value="6" style="width: 36px;" onclick="nhap('6')"> 
+    <input type="button" name="7" value="7" style="width: 36px;" onclick="nhap('7')"> 
+    <input type="button" name="8" value="8" style="width: 36px;" onclick="nhap('8')"> 
+    <input type="button" name="9" value="9" style="width: 36px;" onclick="nhap('9')"><br>
+    <input type="button" name="cong" value="+" style="width: 36px;" onclick="nhap('+')"> 
+    <input type="button" name="tru" value="-" style="width: 36px;" onclick="nhap('-')"> 
+    <input type="button" name="nhan" value="*" style="width: 36px;" onclick="nhap('*')"> 
+    <input type="button" name="chia" value="/" style="width: 36px;" onclick="nhap('/')"> 
+    <input type="button" name="bang" value="=" style="width: 36px;" onclick="tinh()"><br>
+    <input type="button" name="xoa" value="C" style="width: 36px;" onclick="Xoa()">
+</body>
+</html>

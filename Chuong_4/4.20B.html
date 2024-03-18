@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 20B</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        function luongcb() {
+            var luongcoso = document.getElementById("luongcs").value;
+            var heso = document.getElementById("heso").value;
+            document.getElementById("luongcb").value = luongcoso * heso;
+            PhuCap(); // Recalculate Phụ cấp after updating Lương cơ bản
+            TT();
+        }
+
+        function PhuCap() {
+            var luongcoban = document.getElementById("luongcb").value;
+            document.getElementById("phucap").value = luongcoban * 0.25;
+            TT();
+        }
+        function TN(){
+            var d = new Date();
+            var namhientai = d.getFullYear(), namvaolam = document.getElementById("nam").value;
+            document.getElementById("thamnien").value = namhientai - namvaolam;
+        }
+        function TT(){
+            var luongcoban = parseFloat(document.getElementById("luongcb").value);
+            var phucap = parseFloat(document.getElementById("phucap").value);
+            document.getElementById("thanhtien").value = luongcoban + phucap;
+        }
+    </script>
+    <input type="text" placeholder="Họ tên" id="hoten"> &nbsp;
+    <input type="text" placeholder="Năm vào làm" id="nam" onkeyup="TN()"><br><br>
+    <input type="text" placeholder="Hệ số" id="heso"> &nbsp;
+    <input type="text" placeholder="Lương cơ sở" id="luongcs"
+    onkeyup="luongcb()"><br><br>
+    <input type="text" placeholder="Lương cơ bản" id="luongcb"
+    onkeyup="PhuCap()"> &nbsp;
+    <input type="text" placeholder="Phụ cấp" id="phucap"> <br><br>
+    <input type="text" placeholder="Thâm niên" id="thamnien"><br><br>
+    <input type="text" placeholder="Thành tiền" id="thanhtien">
+</body>
+</html>

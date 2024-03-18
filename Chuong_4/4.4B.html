@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài làm JavaScript 04B</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        document.write("Click vào các button<br>");
+        document.write("<br>");
+        function hoten(){
+            var ht = document.getElementById("txthoten");
+            alert(ht.value);
+        }
+        function donvi(){
+            var dv = document.getElementById("txtdonvi");
+            alert(dv.value);
+        }
+    </script>
+    <input type="button" name="hoten" value="Họ tên" onclick="hoten()">
+    <input type="text" id="txthoten" value="Chào"><br><br>
+    <input type="button" name="donvi" value="Đơn vị" onclick="donvi()">
+    <input type="text" id="txtdonvi" value="Đơn vị">
+</body>
+</html>

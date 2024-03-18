@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 18A</title>
+</head>
+<script lang="JavaScript">
+    function kt(){
+        if(ND.value.length > 200) {alert('Bạn đã gõ quá số ký tự cho phép!')}
+        Sokytu.value = ND.value.length;
+    }
+</script>
+<body style="font-family: Arial;">
+    Số ký tự đã gõ: <input type="text" id="Sokytu"><br><br>
+    <textarea id="ND" cols="50" rows="10" onkeyup="kt()"></textarea>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài làm JavaScript 03B</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        document.write("<h2> Tạo Button và cửa sổ thông báo bằng JavaScript </h2><br>");
+        document.write("<br>");
+        function wel(){
+            var el = document.getElementById("msg03");
+            alert(el.value + "I am studying web design with JavaScript");
+        }
+    </script>
+    <form>
+        <input type="button" name="Hello" value="Hello" onclick="wel()">
+        <input type="text" id="msg03" value="Hello Everybody, ">
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 21C</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        function tinhtoan(){
+            var a = parseFloat(document.getElementById("So01").value);
+            var b = parseFloat(document.getElementById("So02").value);
+            var ketqua = 0;
+
+            var select = document.getElementById("pheptinh");
+            var luachon = select.options[select.selectedIndex].value;
+
+            switch (luachon) {
+                case 'cong':
+                    ketqua = a + b;
+                    break;
+                case 'tru':
+                    ketqua = a - b;
+                    break;
+                case 'nhan':
+                    ketqua = a * b;
+                    break;
+                case 'chia':
+                    if (b !== 0) {
+                        ketqua = a / b;
+                    } else {
+                        alert('Không thể chia cho 0!');
+                        return;
+                    }
+                    break;
+                default:
+                    alert('Chưa chọn phép tính!');
+                    return;
+            }
+
+            document.getElementById("Ketqua").value = ketqua;
+        }
+    </script>
+    Số 1: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="So01"><br><br>
+    Số 2: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="So02"><br><br>
+    Kết quả: <input type="text" id="Ketqua"><br><br>
+    <select id="pheptinh">
+        <option value="cong">Cộng</option>
+        <option value="tru">Trừ</option>
+        <option value="nhan">Nhân</option>
+        <option value="chia">Chia</option>
+    </select> &nbsp;&nbsp;
+    <input type="button" name="tinh" value="Tính" onclick="tinhtoan()">
+</body>
+</html>

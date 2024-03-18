@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 21B</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        function tinhtoan(){
+            var a,b, ketqua = 0;
+            var rdo = document.getElementsByName("pheptinh");
+            a = parseFloat(document.getElementById("So01").value);
+            b = parseFloat(document.getElementById("So02").value);
+            if (rdo[0].checked) {
+                ketqua = a + b;
+            } else if (rdo[1].checked) {
+                ketqua = a - b;
+            } else if (rdo[2].checked) {
+                ketqua = a * b;
+            } else if (rdo[3].checked) {
+                if (b !== 0) {
+                    ketqua = a / b;
+                } else {
+                    alert('Không thể chia cho 0!');
+                    return;
+                }
+            } else {
+                alert('Chưa chọn phép tính!');
+                return;
+            }
+
+            document.getElementById("Ketqua").value = ketqua;
+        }
+    </script>
+    Số 1: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="So01"><br><br>
+    Số 2: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="So02"><br><br>
+    Kết quả: <input type="text" id="Ketqua"><br><br>
+    <input type="radio" name="pheptinh" value="1"> Cộng &nbsp;
+    <input type="radio" name="pheptinh" value="2"> Trừ &nbsp;
+    <input type="radio" name="pheptinh" value="3"> Nhân &nbsp;
+    <input type="radio" name="pheptinh" value="4"> Chia <br><br>
+    <input type="button" name="tinh" value="Tính" onclick="tinhtoan()">
+</body>
+</html>

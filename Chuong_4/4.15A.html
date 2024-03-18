@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi thuộc tính của trang web</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        function capnhat(){
+            document.title = Tieude.value;
+            document.bgColor = Maunen.value;
+            document.fgColor = Mauchu.value;
+            window.defaultStatus = Trangthai.value;
+        }
+    </script>
+    <h1>THAY ĐỔI THUỘC TÍNH WEB</h1>
+    <input type="text" id="Tieude" placeholder="Nhập tiêu đề"><br><br>
+    <input type="text" id="Maunen" placeholder="Nhập màu nền"><br><br>
+    <input type="text" id="Mauchu" placeholder="Nhập màu chữ"><br><br>
+    <input type="text" id="Trangthai" placeholder="Nhập dòng trạng thái"><br><br>
+    <input type="button" name="Thaydoi" value="Thay đổi" onclick="capnhat()"><br><br>
+</body>
+</html>

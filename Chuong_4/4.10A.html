@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh họa câu lệnh JavaScript vào các phần tử</title>
+    <style>
+        input{
+            background-color: rgb(44, 221, 53);
+            color: azure;
+            margin-right: 10px;
+            border: 1px;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script lang="JavaScript">
+        function lenhjavascript(){
+            alert('Hello world');
+            alert('Welcome Javascript')
+            var x = 10, y = 20;
+            alert('Tổng là: '+ (x + y))
+            alert('Dang ky E-Mail')
+        }
+    </script>
+    <input type="button" value="BUT 1" onclick="alert('Hello world')">
+    <input type="button" value="BUT 2" onclick="alert('Welcome Javascript')">
+    <input type="button" value="BUT 3" onclick="var x,y; x = 10; y = 20; alert('Tổng là: '+ (x + y))">
+    <input type="button" value="BUT 4" onclick="alert('Dang ky E-Mail')">
+    <input type="button" value="BUT 5" onclick="lenhjavascript()">
+</body>
+</html>

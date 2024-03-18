@@ -1,0 +1,31 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sắp xếp mảng 9B</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <script lang="JavaScript">
+        var SoLuong, x;
+        var DS = new Array(100);
+        SoLuong = prompt("Bạn hãy nhập SL thiết bị: ", 5);
+        for(i=0; i < SoLuong; i++){
+            DS[i]=prompt("Nhập tên thiết bị: ", "");
+        }
+        document.write("<h1>Danh sách các thiết bị(Chỉ hiển thị (Computer))</h1>");
+        document.write("<table border = 1>");
+        document.write("<tr><th>STT</th><th>Tên thiết bị</th></tr>");
+        for(x in DS){
+            if(DS[x].toLowerCase() === "computer"){
+                document.write("<tr><td>"+ (parseInt(x) + 1) +"</td><td>"+ DS[x] +"</td></tr>");
+            }
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>

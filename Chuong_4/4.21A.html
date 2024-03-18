@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 21A</title>
+</head>
+<script lang="JavaScript">
+    function Cong(){
+        var a = parseFloat(document.getElementById("So01").value),
+            b = parseFloat(document.getElementById("So02").value);
+            document.getElementById("Ketqua").value = a + b;
+    }
+    function tru(){
+        var a = document.getElementById("So01").value,
+            b = document.getElementById("So02").value;
+            document.getElementById("Ketqua").value = a - b;
+    }
+    function nhan(){
+        var a = document.getElementById("So01").value,
+            b = document.getElementById("So02").value;
+            document.getElementById("Ketqua").value = a * b;
+    }
+    function chia(){
+        var a = document.getElementById("So01").value,
+            b = document.getElementById("So02").value;
+            if(b != 0){document.getElementById("Ketqua").value = a / b;}
+            else{
+                alert('Không thể chia!');
+            }
+    }
+</script>
+<body>
+    Số 1: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="So01"><br><br>
+    Số 2: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="So02"><br><br>
+    Kết quả: <input type="text" id="Ketqua"><br><br>
+    <input type="button" id="cong" value="Cộng" onclick="Cong()">&nbsp;
+    <input type="button" id="tru" value="Trừ" onclick="tru()">&nbsp;
+    <input type="button" id="nhan" value="Nhân" onclick="nhan()">&nbsp;
+    <input type="button" id="chia" value="Chia" onclick="chia()">
+</body>
+</html>

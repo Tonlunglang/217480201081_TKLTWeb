@@ -1,0 +1,12 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi giá trị của thuộc tính</title>
+</head>
+<body>
+    <h2>Hãy nhập 2 số và click vào nút Tính tổng</h2>
+    <input type="text" name="Sohang1"> + <input type="text" name="Sohang2"> = <input type="text" name="Ketqua"><br><br>
+    <input type="button" value="Tính tổng" onclick="document.getElementsByName('Ketqua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) + parseFloat(document.getElementsByName('Sohang2')[0].value)">
+</body>
+</html>

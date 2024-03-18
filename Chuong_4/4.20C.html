@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 20C</title>
+</head>
+<body>
+    <input type="text" placeholder="Họ tên" id="hoten"> &nbsp;
+    <input type="text" placeholder="Năm vào làm" id="nam"><br><br>
+    <input type="text" placeholder="Hệ số" id="heso"> &nbsp;
+    <input type="text" placeholder="Lương cơ sở" id="luongcs"><br><br>
+    <input type="text" placeholder="Lương cơ bản" id="luongcb"> &nbsp;
+    <input type="text" placeholder="Phụ cấp" id="phucap"> <br><br>
+    <input type="text" placeholder="Thâm niên" id="thamnien"> &nbsp;
+    <input type="text" placeholder="Thành tiền" id="thanhtien"><br><br>
+    <input type="button" value="Tính lương" id="tinhluong" onclick="tinh()">
+    <script lang="JavaScript">
+        function tinh(){
+            var hs, luongcs, luongcoban, Phucap, namvaolam;
+            var D = new Date();
+            namvaolam = document.getElementById("nam").value;
+            var namhientai = D.getFullYear();
+            hs = document.getElementById("heso").value;
+            luongcs = document.getElementById("luongcs").value;
+            luongcoban = document.getElementById("luongcb").value = hs * luongcs;
+            Phucap = document.getElementById("phucap").value = luongcoban * 0.25;
+            document.getElementById("thamnien").value = namhientai - namvaolam;
+            document.getElementById("thanhtien").value = luongcoban + Phucap;
+        }
+    </script>
+</body>
+</html>

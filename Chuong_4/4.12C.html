@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 12C</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        function HT(){
+            var ho = document.getElementsByName("Ho")[0].value;
+            var ten = document.getElementsByName("Ten")[0].value;
+            var hoten = ho + " " + ten;
+            document.getElementsByName("Hoten")[0].value = hoten;
+        }
+    </script>
+    <h2>Hiển thị dữ liệu textbox</h2>
+    <input type="text" name="Ho" value="Họ" ><br><br>
+    <input type="text" name="Ten" value="Tên"><br><br>
+    <input type="button" name="Hienthi" value="Hiển thị" onclick="HT()"><br><br>
+    <input type="text" name="Hoten" value="Họ và Tên">
+</body>
+</html>

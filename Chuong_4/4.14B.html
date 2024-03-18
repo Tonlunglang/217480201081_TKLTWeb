@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 14B</title>
+</head>
+<body>
+    <h2>Radio chọn phép tính</h2>
+    <input type="text" name="Sohang1" style="background-color: rgb(206, 236, 236);"><br><br>
+    <input type="text" name="Sohang2" style="background-color: rgb(209, 243, 243);"><br><br>
+    <input type="text" name="Ketqua"><br><br>
+    <input type="radio" name="pheptinh" value="1" checked> Cộng 
+    <input type="radio" name="pheptinh" value="2"> Trừ
+    <input type="radio" name="pheptinh" value="3"> Nhân
+    <input type="radio" name="pheptinh" value="4"> Chia <br><br>
+    <input type="button" name="Tinh" value="Tính" onclick="tinh()">
+    
+    <script lang="JavaScript">
+        function tinh() {
+            var x = parseFloat(document.getElementsByName('Sohang1')[0].value);
+            var y = parseFloat(document.getElementsByName('Sohang2')[0].value);
+            var pheptinh = document.querySelector('input[name="pheptinh"]:checked');
+
+            if (pheptinh) {
+                var pheptinhValue = parseFloat(pheptinh.value);
+                var ketqua = 0;
+
+                switch (pheptinhValue) {
+                    case 1:
+                        ketqua = x + y;
+                        break;
+                    case 2:
+                        ketqua = x - y;
+                        break;
+                    case 3:
+                        ketqua = x * y;
+                        break;
+                    case 4:
+                        if (y !== 0) {
+                            ketqua = x / y;
+                        } else {
+                            alert('Không thể chia cho 0!');
+                            return;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+
+                document.getElementsByName('Ketqua')[0].value = ketqua;
+            } else {
+                alert('Vui lòng chọn một phép tính!');
+            }
+        }
+    </script>
+</body>
+</html>
