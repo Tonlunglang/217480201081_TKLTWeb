@@ -1,0 +1,3 @@
+<?php
+echo "CHAO MUNG CAC BAN DEN VOI LAP TRINH WEB PHP."
+?>
