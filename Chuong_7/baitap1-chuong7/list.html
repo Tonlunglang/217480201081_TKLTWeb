@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">NHẬP DỮ LIỆU CẦN LIỆT KÊ</h1>
+    <center>
+        <form method="post" action="list.php">
+            <label>Chọn dữ liệu:</label><br>
+            <select name="data[]" multiple>
+                <option value="hanghoa">Hàng hóa</option>
+                <option value="khachhang">Khách hàng</option>
+                <option value="nhasanxuat">Nhà sản xuất</option>
+                <option value="hoadon">Hóa đơn</option>
+            </select>
+            <br><br>
+            <input type="submit" value="In dữ liệu">
+        </form>
+    </center>
+</body>
+</html>
